@@ -15,3 +15,4 @@ let name = "Sudhakar"
 let vehicleNumber = 222
 
 console.log(vehicleNumber);
+console.log(name);
