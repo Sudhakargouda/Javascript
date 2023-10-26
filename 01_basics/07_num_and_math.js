@@ -15,7 +15,7 @@ console.log(otherNumber);
 const hundreds = 100000
 console.log(hundreds.toLocaleString('en-IN'));//in indian rupes we can read by using this numbers
 
-//++++++++++++++++++++++++++++ Math +++++++++++++++++++++++++
+//++++++++++++++++++++++++++++ Math ++++++++++++++++++++++++++++++++++++++
 
 console.log(Math);
 console.log(Math.abs(-4));//it will covert all negative value to positive
