@@ -15,7 +15,7 @@ console.log(gameName.indexOf('o'));//character index
 const newString = gameName.substring(0,4)
 console.log(newString); // specfic words can be taken by this method
 
-const sliceString = gameName.slice(8,11)//specfic words are taken and remaining words can will be removed
+const sliceString = gameName.slice(8,11)//specfic words are taken and remaining words will be removed
 const slString = gameName.slice(-8,11)
 console.log(slString);
 

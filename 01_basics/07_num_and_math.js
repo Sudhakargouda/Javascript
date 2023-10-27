@@ -20,8 +20,8 @@ console.log(hundreds.toLocaleString('en-IN'));//in indian rupes we can read by u
 console.log(Math);
 console.log(Math.abs(-4));//it will covert all negative value to positive
 console.log(Math.round(4.6)); // it will round off the  value
-console.log(Math.ceil(7.2));//it will give highest values
-console.log(Math.floor(6.5));//it will give the lowest value
+console.log(Math.ceil(7.2));//Returns the smallest integer greater than or equal to its numeric argument
+console.log(Math.floor(6.5));//Returns the greatest integer less than or equal to its numeric argument
 console.log(Math.min(4,3,6,8));
 console.log(Math.max(4,3,6,8));
 //prints min and max values
