@@ -16,7 +16,7 @@ console.log(booleanBoo)
 console.log(typeof booleanBoo);
 
 
-// ***********Operations **********
+// ***********Operations ************
 
 //simple
 console.log(2 + 2)

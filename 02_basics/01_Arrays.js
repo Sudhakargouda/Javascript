@@ -19,7 +19,7 @@ console.log("A", myArr);
 const myn1 = myArr.slice(1,3)
 console.log(myn1);
 console.log("B", myArr);
-// in slice the original value will remain same and (1,3) it won'tinclude the 3rd number
+// in slice the original value will remain same and (1,3) it won't include the 3rd number
 const myn2 = myArr.splice(1,3)
 console.log(myn2);
 console.log("C", myArr);
@@ -38,7 +38,7 @@ console.log(marvel_heroes);
 const allHeroes = marvel_heroes.concat(dc_heroes)
 console.log(allHeroes);
 
-//spread method will merge the array
+//spread method will merge the array in single one array
 const all_new_heroes = [...marvel_heroes,...dc_heroes]
 console.log(all_new_heroes);
 
@@ -59,6 +59,6 @@ let s2 = 1000
 let s3 = 10000
 
 console.log(Array.of(s1,s2,s3));
-//of mehtod will convert to array
+//of method will convert to array
 
 

@@ -52,5 +52,5 @@ function arrayFunctionPassing(getTheArray){
     return getTheArray[3]
 }
 
-// console.log(arrayFunctionPassing(newArray));
+//console.log(arrayFunctionPassing(newArray));
 console.log(arrayFunctionPassing([299,399,499,599]));
