@@ -9,10 +9,12 @@ console.log(myDate.toDateString());
 let myCreatedDate = new Date(2023,0,25,5,3)
 console.log(myCreatedDate.toDateString());
 console.log(myCreatedDate.toLocaleString());
+console.log(myCreatedDate.getTime());
+
 
 let myTimeStamp = Date.now()
-console.log(myTimeStamp);// output wil be milliseconds
-console.log(myCreatedDate.getTime());
+console.log(myTimeStamp);// output will be milliseconds
+
 
 
 let newDate = new Date()

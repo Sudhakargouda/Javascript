@@ -22,7 +22,7 @@ Object.freeze(JsUser)
 //console.log(JsUser);
 
 JsUser.greeting = function(){
-    console.log('Hello Js User ${this.name}');
+    console.log(`Hello Js User ${this.name}`);
 }
 //console.log(JsUser.greeting());
 
@@ -42,8 +42,7 @@ const regularUser = {
     fullname: {
         userfullname: {
             firstname: "Sudhakar",
-                lastname: "Patil"
-         
+                lastname: "Patil"       
         }
     }
 }
@@ -53,7 +52,7 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 
 //const obj3 = {obj1,obj2}
-// const obj3 = Object.assign({}, obj1, obj2)
+// const obj3 = Object.assign({}, obj1, obj2)//here remeber target and source
 // console.log(obj3);
 // the two objects will be combined and given in one object array type
 const obj3 = {...obj1, ...obj2}//spread type
@@ -74,15 +73,15 @@ const users = [
     },
 ]
 
-users[1].email
-console.log(tinderUser);
+// users[1].email
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 
 const course = {
     cousename: "Rahul",
@@ -90,13 +89,13 @@ const course = {
     courseInstructor: "Jeeva"
 }
 
-console.log(course.courseInstructor);
+//console.log(course.courseInstructor);
 //De-structured instructor in react we use more
 const {courseInstructor: instructor} = course
 
-console.log(instructor);
+console.log(instructor.price);
 
-//react code the curly bracket is the one where we implement the instructor
+//react code the curly bracket is the one where we implement the De-structured instructor
 const navbar = ({company}) =>{
 
 }

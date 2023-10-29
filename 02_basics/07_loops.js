@@ -70,7 +70,7 @@ switch (month) {
         break;
 }
 
-//truthy or falsly
+//truthy or falsy
 const userEmail = ""
 
 if(userEmail){
@@ -110,3 +110,71 @@ console.log(val1);
 const iceCreamPrice = 100
 
 iceCreamPrice <= 90? console.log("You can Buy the ice cream"): console.log("You cannot buy the ice cream");
+
+//For loop
+
+for (let i = 1; i <= 10; i++) {
+    const element = (i);
+    console.log(element);
+}
+
+for (let i = 1; i <= 10; i++) {
+    if(i == 5){
+        console.log(`leave this `);
+        break
+    }
+    console.log(`${i}`);
+}
+
+for (let i = 1; i <= 10; i++) {
+    const element = (i);
+    if(element == 5){
+        console.log(`leave this`);
+        continue
+    }
+   console.log(element);
+}
+
+for (let i = 1; i <= 10; i++) {
+    const element = i
+    for (let j = 1; j <= 10; j++) {
+        const element = j
+       console.log(i + '*' + j + '=' + i * j); 
+    }
+}
+
+for (let i = 1; i <= 10; i++) {
+    console.log(` value ${i}`);
+    for (let j = 1; j <= 10; j++) {
+       console.log(`value ${j} and  ${i}`);
+    }
+}
+
+const myArray = ["flash", "batman", "superman"]
+console.log(myArray.length);
+for (let index = 0; index < myArray.length; index++) {
+    const element = myArray[index];
+    console.log(element);
+}
+
+let i = 0
+
+while(i <= 10){
+    console.log(`value of index is ${i}`);
+    i = i + 2
+}
+
+let myArrayy = ['splash','rash','spach']
+let arr = 0
+
+while (arr < myArrayy.length) {
+    console.log(`Value is ${myArrayy[arr]}`);
+    arr = arr + 1
+}
+
+let j = 0
+
+do {
+    console.log(`${j}`);
+    j++
+} while (j <= 10);

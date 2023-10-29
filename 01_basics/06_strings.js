@@ -7,7 +7,7 @@ console.log('Hello my name is ${name} and my repo count is ${repoCount}');
 const gameName = new String('The/man/of/god')//string Object
 
 console.log(gameName[0]); //postion we can find
-console.log(gameName.length); //length of the strinf we can find
+console.log(gameName.length); //length of the string we can find
 console.log(gameName.toUpperCase()); // string uppercase
 console.log(gameName.charAt(2)); //character postion
 console.log(gameName.indexOf('o'));//character index
