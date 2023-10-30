@@ -32,7 +32,7 @@ else{
     console.log("It is greater than 10000");
 }
 
-//&& and ||
+// && and ||
 
 const userLoggedIn = true
 const debitCard = true
