@@ -105,7 +105,7 @@ const navbar = ({company}) =>{
 
 // {
 //     "name": "Sudhakar"
-//     "cousename": "xyz"
+//     "coursename": "xyz"
 //     "price": "free"
 // }
 

@@ -19,11 +19,11 @@ console.log("A", myArr);
 const myn1 = myArr.slice(1,3)
 console.log(myn1);
 console.log("B", myArr);
-// in slice the original value will remain same and (1,3) it won't include the 3rd number
+// in slice the original values will remain same and (1,3) it won't include the 3rd number
 const myn2 = myArr.splice(1,3)
 console.log(myn2);
 console.log("C", myArr);
-//in splice the original value is changed and (1,3) and includes the number
+//in splice the original values is changed and (1,3) and includes the number
 
 */
 

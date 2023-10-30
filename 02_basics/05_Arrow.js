@@ -32,7 +32,7 @@ const chaii = () => {
 
 chaii()
 
-//Overall the this function is used in only in object inside function oe when use object with function
+//Overall the this function is used in only in object inside function or when we use object with function
 
 // it is undefined in the function and arrow
 

@@ -143,7 +143,7 @@ const books = [
 // console.log(mybook);
 
 
-//map function cam also be used
+//map function can also be used
 const myNumbers = [1,2,3,4,5,6,7,8,9,10]
 
 // const Nums = myNumbers.map((num) => num + 10)
@@ -163,13 +163,13 @@ const Nums = myNumbers
 
 const myNums = [1,2,3]
 
-//const myTotal = myyNums.reduce
-
-// (function(accumalator, currentvalue) {
+//const myTotal = myyNums.reduce(function(accumalator, currentvalue) {
 //     console.log(`acc: ${accumalator} and currval: ${currentvalue}`);
 //     return accumalator + currentvalue
 // }, 0)
 
+
+//Reduce method will caluclate all the value  an givve us the total
 const myTotal = myNums.reduce((acc,currval) =>acc + currval , 0)
 
 console.log(myTotal);
