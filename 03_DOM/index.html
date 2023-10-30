@@ -15,15 +15,95 @@
 
        <h1>Document Object model Manipulation </h1>
        <div>
-       <h1 id = title class = heading >Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
+       <h1 style = "color: green" id = title class = heading >Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span style = "display: none;">  test text</span> </h1>
        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur?</h2>
        <ul>
-        <li>one</li>
-        <li>Two</li>
-        <li>Three</li>
+        <li class = "list-item">one</li>
+        <li class = "list-item">Two</li>
+        <li class = "list-item">Three</li>
        </ul>
 
        </div>
 
 </body>
 </html>
+
+
+//learnt
+//document.getElemntById
+//innerText this will not show some words when we add span style display none
+
+//textContent this will show all hidden words which were hidden in the 
+
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur?​</h2>​
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur?​</h2>​
+document.querySelector('li')
+<li>​…​</li>​::marker​"one"</li>​
+document.querySelector('ul')
+<ul>​…​</ul>​
+myul.querySelector('li')
+VM1712:1 Uncaught ReferenceError: myul is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1712:1
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li>​…​</li>​
+turnGreen.style.backgroundColor = "green"
+VM2032:1 Uncaught ReferenceError: turnGreen is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2032:1
+const turnGreen = myul.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = "green"
+'green'
+
+
+//querySelectorAll we use the 
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const tempLiList = document
+undefined
+const tempLiList = document.querySelectorAll('li)
+VM2836:1 Uncaught SyntaxError: Invalid or unexpected token
+const tempLiList = document.querySelectorAll('li);
+VM2842:1 Uncaught SyntaxError: Invalid or unexpected token
+const tempLiList = document.querySelectorAll('li);
+VM2846:1 Uncaught SyntaxError: Invalid or unexpected token
+const myH1 = document.querySelectorAll('h1')
+undefined
+myH1
+NodeList(2) [h1, h1#title.heading]0: h11: h1#title.headinglength: 2[[Prototype]]: NodeList
+myH1.style.color = 'green'
+VM3092:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18
+(anonymous) @ VM3092:1
+myH1[0].style.color = 'green'
+'green'
+
+
+
+//getElementsByClassName  we should convert the  html collection to arrray by using this Array.from
+document.getElementsByClassName('list-item')
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+const tempClassList = document.getElementByClassName('list-item')
+VM30:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:32
+(anonymous) @ VM30:1
+const tempClassList = document.getElementsByClassName('list-item')
+undefined
+tempclassList
+VM122:1 Uncaught ReferenceError: tempclassList is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM122:1
+tempClassList
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+Array.from(tempClassList)
+(3) [li.list-item, li.list-item, li.list-item]
+const myConvertedArray = Array.from(tempClassList)
+undefined
+myConvertedArray.forEach(function(li){
+    li.style.color = 'orange'
+})
