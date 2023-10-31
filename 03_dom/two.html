@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM 1</title>
 </head>
-<body background-color: #212121; color: #fff;>
+<body style = "background-color: #212121; color: #fff";>
 
     <div class="parent">
        <div class="day">Monday</div>
@@ -13,6 +13,35 @@
        <div class="day">Wednesday</div>
        <div class="day">Thursday</div>
     </div>
-    
+ 
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent)
+
+    // very imp property
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);       
+    // }
+
+    //we can change color by this method
+    // parent.children[1].style.color = "orange"
+
+    //this porperty will give the 1st element
+    // console.log(parent.firstElementChild);
+    //this property willl give the last elemnt
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);//it  will return all the elements in parent
+    // console.log(dayOne.nextElementSibling);//it will return next element
+
+    console.log("Node: ", parent.childNodes);///it will count all attributes
+
+
+</script>
 </html>
