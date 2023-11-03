@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+    <script>
+        //one we can add onclick litener in the list tag only above in ul inside li
+        //another we can add like this
+        document.getElementById('owl').onclick = function () {
+             alert("owl Clicked")
+        }
+    //     //This isnthe best method 
+    //    document.getElementById('owl').addEventListener('click', function() {
+    //     alert("owl clicked again");
+    //    },false)
+//in the above method i have used the comma after the end of the function where it is default or we event propagation
+        //some more method are there like 
+        //atttachEvent()
+        //jquery - on
+
+
+    //Event object
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log(e);
+})
+//study all these event very important
+
+//type,timestamp,defaultprevented
+//target,toElement,srcElement,currentTarget,
+//clientX, clientY, screenX, screenY
+//altKey, ctrlkey, shiftkey,keyCode
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("clicked inside the ul");
+// },false)
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//     console.log("owl clicked");
+//     e.stopPropagation()
+// },false)
+
+// //In this above two function we can see bubble event will occur 
+// //bubble event is nothing but it is an event where event goes from inside to outside or we can say down to top and false is used to go from down to top and if you make true it wil go from top to down or from outside to inside and we have method to stop this e.stoppropagation is used to stop this
+
+// document.getElementById('google').addEventListener('click', function(e){
+//     console.log("owl clicked");
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log("google clicked");
+// },false)
+
+document.querySelector('#images').addEventListener('click',function(e) {
+    //console.log(e.target.parentNode);//it will select only the lis inside link
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+    removeIt.remove()
+    }
+
+
+    let removeIt = e.target.parentNode
+    removeIt.remove()
+    //Another method to remove
+    //removeIt.parentNode.removeChild(removeIt)
+//when we did this the whole ul list was deleting by clicking the google
+//so we need to add some text
+
+
+//in spill over event has happend read about it mdn
+
+})
+
+</script>
+</html>
