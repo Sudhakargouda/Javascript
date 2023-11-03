@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=m, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Time Methods</h1>
+    <button id = "stop">stop</button>
+    <button id = "start">start</button>
+    <button id = "stop">Stop</button>
+</body>
+<script>
+//     //we can set time 
+//     const Sudhakar = function () {
+//         console.log("Sudhakar");
+//     }    
+//     //setTimeout(Sudhakar, 2000)
+
+//     //we can change the text by timeset method
+//     const changeText = function () {
+//         document.querySelector('h1').innerHTML = "Best JS"
+//     }
+// //stop the time which is set by clicking the stop button
+//     const changeMe = setTimeout(changeText, 2000)
+
+//     document.querySelector('#stop').addEventListener('click', function(){
+//         clearTimeout(changeMe)
+//         console.log("STOPPED");
+//     })
+
+//Set an interval
+// setInterval(function () {
+//     console.log("Sudhakar", Date.now());
+// },1000)
+   
+ //set Multiple parameters
+ const sayDate = function (str) {
+     console.log(str,Date.now());
+ }
+
+ //setInterval(sayDate, 1000, "hi")
+
+ const intervalId = setInterval(sayDate, 1000, "hi")
+
+clearInterval(intervalId)
+</script>
+</html>
