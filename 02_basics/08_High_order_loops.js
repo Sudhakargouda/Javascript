@@ -169,7 +169,7 @@ const myNums = [1,2,3]
 // }, 0)
 
 
-//Reduce method will caluclate all the value  an givve us the total
+//Reduce method will caluclate all the value  an give us the total
 const myTotal = myNums.reduce((acc,currval) =>acc + currval , 0)
 
 console.log(myTotal);
