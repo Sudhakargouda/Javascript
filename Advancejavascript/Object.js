@@ -1,3 +1,13 @@
+//FOur concept learnt 
+//1) is about function can be acces by object
+//2)about new key word which will acess the object
+//3)about the specfic reference or power to only the object or array or we can say string
+//4)about inheritance __proto__ and this
+
+
+
+
+
 function multiple5(num){
     return num * 6
 }
@@ -62,11 +72,7 @@ myHeros.sudhakar()//power to array reference
 
 myHeros.heysudhakar();
 
-//FOur concept learnt 
-//1) is about function can be acces by object
-//2)about new key word which will acess the object
-//3)about the specfic reference or power to only the object or array or we can say string
-//4)about inheritance __proto__ and this
+
 
 
 const User = {
