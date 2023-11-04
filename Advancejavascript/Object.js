@@ -5,9 +5,6 @@
 //4)about inheritance __proto__ and this
 
 
-
-
-
 function multiple5(num){
     return num * 6
 }
@@ -71,8 +68,6 @@ myHeros.sudhakar()//power to array reference
 //heroPower.heysudhakar()//here you can see that we have given reference or power to array only but we are acess the object hence it will show an erroe so when you give ascces to the the array only the object will not acess
 
 myHeros.heysudhakar();
-
-
 
 
 const User = {
