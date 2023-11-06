@@ -24,7 +24,7 @@
         document.getElementById('owl').onclick = function () {
              alert("owl Clicked")
         }
-    //     //This isnthe best method 
+    //     //This is the best method 
     //    document.getElementById('owl').addEventListener('click', function() {
     //     alert("owl clicked again");
     //    },false)
@@ -45,7 +45,7 @@ document.getElementById('owl').addEventListener('click', function(e){
 //clientX, clientY, screenX, screenY
 //altKey, ctrlkey, shiftkey,keyCode
 
-// document.getElementById('images').addEventListener('click', function(e){
+// document.getElementById('#images').addEventListener('click', function(e){
 //     console.log("clicked inside the ul");
 // },false)
 
@@ -70,10 +70,10 @@ document.querySelector('#images').addEventListener('click',function(e) {
     if(e.target.tagName === 'IMG'){
         console.log(e.target.id);
         let removeIt = e.target.parentNode
-    removeIt.remove()
+        removeIt.remove()
     }
 
-
+    
     let removeIt = e.target.parentNode
     removeIt.remove()
     //Another method to remove
