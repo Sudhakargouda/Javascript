@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+    <button id="yellow">yellow</button>
+    <button id="red">red</button>
+
+
+
+</body>
+<script>
+//     function Outer(){
+//     let username = "Sudhakar";
+//     function inner() {
+//         console.log("inner",username);
+//     }
+//     function innerTwo(){
+//         console.log("ineerTwo", username);
+//     }
+//     inner()
+//     innerTwo()
+// }
+// Outer()
+// console.log("Two outer",username);
+//lexical Scoping ===> when decalre function the outer function will give acess to inner function and the function can be many function insite the outer means inside outer function more number of outer function but we cannot acces them outside the outer function you can say  child parent acces and inside outer the two fiunction are created means the cannot be acessed between here everything is about he outer function only to acess.And calling the function will be inside the outer function. and you have create a variable inside the inner and called in the outer means(top) the function will not work ok.
+
+
+//clouser ===> In this when you call the inner function you will get access but whole function scope will be vanished and here also same as the lexical scoping outer function will be acess to the inner function one difference is that whole function will be vanished 
+
+// function one(){
+//     const name = "Sudhakar"
+//     function Two() {
+//         console.log(name);
+//     }
+//     return Two;
+// }
+
+// const clouser = new one()
+// clouser();
+
+// document.getElementById("orange").onclick = function(){
+//     document.body.style.backgroundColor = `orange`;
+
+// document.getElementById("green").onclick = function(){
+//     document.body.style.backgroundColor = `green`;
+// }
+// }//if you get 100 colors
+
+
+//Example for clouser real time example
+    // function clickhandler(color){
+
+    //     return function(){
+    //         document.body.style.backgroundColor = `${color}`;
+    //     }
+    // }
+    // document.getElementById('orange').onclick = clickhandler("orange")
+    // document.getElementById('green').onclick = clickhandler("green")
+    // document.getElementById('yellow').onclick = clickhandler("yellow")
+    // document.getElementById('red').onclick = clickhandler("red")
+
+        function click(color){
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = click("orange")
+        document.getElementById('yellow').onclick = click("yellow")
+
+
+
+</script>
+</html>
