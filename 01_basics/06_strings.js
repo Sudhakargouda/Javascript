@@ -2,7 +2,7 @@ const name = "Sudh"
 const repoCount = "akar"
 //console.log(name + repocount);
 
-console.log('Hello my name is ${name} and my repo count is ${repoCount}');
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String('The/man/of/god')//string Object
 
@@ -27,6 +27,5 @@ const url = "https://adajhbshf.com/dbduffb%33kasehfsau"
 console.log(url.replace("%33",'--'));
 console.log(url.includes('mundar'));// replace or true or false we can check
 
-
 console.log(gameName.split('/')); // by split method we can make the array of given string 
-console.log(gameName.bold());
+
