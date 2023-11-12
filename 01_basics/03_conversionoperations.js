@@ -37,6 +37,8 @@ let x = 5
 const y = x++
 console.log(x,y);
 
+
 let a = 10
 const b = ++a
 console.log(a, b);
+
